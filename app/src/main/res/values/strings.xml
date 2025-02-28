@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_no_internet_connection">No Internet Connection</string>
+    <string name="txt_no_data_found">No Data Found</string>
+    <string name="txt_go_back">Go Back</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_github_user_organization_name">Github User/Organization Name</string>
+    <string name="txt_language">Language: %1$s</string>
+    <string name="txt_stars">Stars: %1$s</string>
+    <string name="txt_forks">Forks: %1$s</string>
+    <string name="txt_visibility">Visibility: %1$s</string>
+    <string name="txt_no_description">No description</string>
+    <string name="txt_unknown">Unknown</string>
+    <string name="txt_loading">Loading…</string>
+    <string name="txt_name">Name: %1$s</string>
+    <string name="txt_full_name">Full name: /%1$s</string>
+    <string name="txt_default_branch">Default Branch: %1$s</string>
+    <string name="txt_last_updated">Last Updated: %1$s</string>
+    <string name="txt_description">"Description: "</string>
+    <string name="txt_repository_list">Repository List</string>
+    <string name="txt_repository_details">Repository Details</string>
+</resources>

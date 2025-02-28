@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_chevron_left"
+        app:title="@string/txt_repository_details" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avator"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/CircleImageStyle"
+            tools:src="@color/primary" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Repo Name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0.5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/repoName"
+            tools:text="Repo Full Name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            tools:text="Branch: Repo Branch" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            tools:text="Stars: Repo Stars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoForks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            tools:text="Forks: Repo Forks" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoVisibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            tools:text="Visibility: Repo Visibility" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="Last updated: Repo Last Updated" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/repoLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:chipBackgroundColor="@color/primary_light"
+            app:chipCornerRadius="20dp"
+            app:chipStrokeColor="@color/primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avator"
+            tools:text="Repo Language" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            tools:text="Description: Repo Description" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

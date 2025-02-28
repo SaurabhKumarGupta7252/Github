@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/userInputFragment">
+
+    <fragment
+        android:id="@+id/userInputFragment"
+        android:name="gupta.saurabh.github.fragment.UserInputFragment"
+        android:label="User Input"
+        tools:layout="@layout/fragment_user_input">
+        <action
+            android:id="@+id/action_userInputFragment_to_repoListFragment"
+            app:destination="@id/repoListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/repoListFragment"
+        android:name="gupta.saurabh.github.fragment.RepoListFragment"
+        android:label="Repository List"
+        tools:layout="@layout/fragment_repo_list">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_repoListFragment_to_repoDetailFragment"
+            app:destination="@id/repoDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/repoDetailFragment"
+        android:name="gupta.saurabh.github.fragment.RepoDetailFragment"
+        android:label="Repository Detail"
+        tools:layout="@layout/fragment_repo_detail">
+        <argument
+            android:name="repo"
+            app:argType="gupta.saurabh.github.model.Repo" />
+    </fragment>
+</navigation>
